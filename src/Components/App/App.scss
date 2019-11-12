@@ -1,0 +1,38 @@
+header,
+footer {
+  background-color: #282c34;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+footer {
+  height: 20px;
+  line-height: 20px;
+}
+main {
+  display: flex;
+  flex: 1;
+  overflow: auto;
+
+  > * {
+    width: 33.33%;
+    padding: 20px;
+    border: 2px solid;
+    cursor: default;
+    h1 {
+      margin: 0;
+      padding: 0;
+      border-bottom: 1px solid gainsboro;
+      text-transform: uppercase;
+    }
+    > div {
+      height: 25px;
+      border: 1px solid gainsboro;
+      border-radius: 5px;
+      margin-top: 5px;
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
+}
